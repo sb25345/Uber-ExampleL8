@@ -11,7 +11,7 @@ DATE_URL = ('HTTPS://S3-US-WEST-2.AMAZONAWS.COM/)'
 
 def load_data(nrows):
         data=pd.read_csv(DATA_UPL, nrows=nrows)
-        lowercase=labbda x:str(x).lower()
+        lowercase=labbda x:str(X).lower()
         data.rename(lowercase, axis="columns", inplace=True)
         date[DATE_COLUMN]=pd.to_datetime(date[DATA_COLUMN])
         return data
